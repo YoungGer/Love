@@ -25,6 +25,11 @@ $(function () {
     setInterval(function () {
         garden.render();
     }, Garden.options.growSpeed);
+
+    // setInterval(function () {
+    //     garden.render();
+    // }, 0);
+    
 });
 
 $(window).resize(function() {
@@ -43,7 +48,7 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
-	var interval = 50;
+	var interval = 0;  // org 50
 	var angle = 10;
 	var heart = new Array();
 	var animationTimer = setInterval(function () {
@@ -110,13 +115,13 @@ function timeElapse(date){
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds"; 
+	var result = "<span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 时 <span class=\"digit\">" + minutes + "</span> 分 <span class=\"digit\">" + seconds + "</span> 秒"; 
 	$("#elapseClock").html(result);
 }
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn("fast", function() {
 		showLoveU();
 	});
 }
@@ -132,5 +137,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('#loveu').fadeIn(); // orginal 3000
 }
