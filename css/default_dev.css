@@ -15,6 +15,7 @@ body {
 	float: left;
 	width:670px;
 	height:625px;
+	margin-top: 60px;
 }
 
 #garden {
@@ -67,11 +68,11 @@ body {
 #code {
 	float: left;
 	width: 440px;
-	height: 400px;
-	margin-top: 0px;
-	margin-bottom: 50px;
+	/*height: 400px;*/
+	margin-top: 30px;
+	margin-bottom: 30px;
 	/*border-bottom: 50px;*/
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 	color: #333;
 	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
 	font-size: 13px;
