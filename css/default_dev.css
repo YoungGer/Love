@@ -68,9 +68,13 @@ body {
 	float: left;
 	width: 440px;
 	height: 400px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	/*border-bottom: 50px;*/
+	padding-bottom: 50px;
 	color: #333;
 	font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-	font-size: 12px;
+	font-size: 13px;
 }
 
 #code .string{
