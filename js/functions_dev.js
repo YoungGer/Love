@@ -48,7 +48,7 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
-	var interval = 0;  // org 50
+	var interval = 60;  // org 50
 	var angle = 10;
 	var heart = new Array();
 	var animationTimer = setInterval(function () {
@@ -91,7 +91,7 @@ function startHeartAnimation() {
 				if (progress >= str.length) {
 					clearInterval(timer);
 				}
-			}, 75);
+			}, 130);
 		});
 		return this;
 	};
@@ -121,7 +121,7 @@ function timeElapse(date){
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn("fast", function() {
+	$('#messages').fadeIn(5000, function() {
 		showLoveU();
 	});
 }
@@ -137,5 +137,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(); // orginal 3000
+	$('#loveu').fadeIn(3000); // orginal 3000
 }
